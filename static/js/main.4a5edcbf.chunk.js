@@ -301,7 +301,7 @@
                     style: {
                         display: "inline"
                     },
-                    children: ["click to change >", " "]
+                    children: ["nhấn để thay đổi >", " "]
                 }), j.name]
             });
             return Object(i.jsxs)("div", {
@@ -930,7 +930,7 @@
                     try {
                         r(n(e))
                     } catch (t) {
-                        console.log("error reading local storage", t)
+                        console.log("error reading local storage!", t)
                     }
                 }
                 ), [e]);
@@ -1000,7 +1000,7 @@
                     return "https://discord.gg/f7RAN8JxrC"
                 }({
                     text: "Chilling with \ud83c\udfa7 ".concat(e.name),
-                    url: "https://lofi.cafe/?station=".concat(e.id)
+                    url: "blank_".concat(e.id)
                 })))
             }
         }
@@ -1568,7 +1568,7 @@
         }
         function rt() {
             y.track("Share on Facebook"),
-            window.open("https://www.facebook.com/sharer/sharer.php?u=https://lofi.cafe")
+            window.open("blank_")
         }
         var st = De();
         function lt(e) {
@@ -1716,7 +1716,7 @@
                 d(u + 1)
             }
             ));
-            var j = jt("https://mailbrew-functions.vercel.app/lofi-cafe-visitors", [u])
+            var j = jt("", [u])
               , m = null !== (e = null === j || void 0 === j ? void 0 : j.response) && void 0 !== e ? e : 0
               , f = m && m.toLocaleString("en")
               , O = Object(c.useMemo)((function() {
