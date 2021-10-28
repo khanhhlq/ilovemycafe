@@ -1018,7 +1018,7 @@
           , Ve = new (n.n(Fe).a)({
             en: {
                 listeningNow: "đang nghe",
-                tapToStart: "tap to start",
+                tapToStart: "nhấn vào để bắt đầu",
                 pressToStart: "nhấn vào đây để bắt đầu nghe nhạc",
                 changeStation: "thay đổi kênh",
                 playPause: "bắt đầu/tạm dừng",
@@ -1409,7 +1409,7 @@
               , v = (a - 60 * p).toString()
               , x = !0 === f ? "blue" : !0 === b ? "red" : void 0;
             function g() {
-                b || y.track("Start Pomodoro"),
+                b || y.track("Pomodoro"),
                 d(!b)
             }
             return Object(c.useEffect)((function() {
@@ -1448,20 +1448,20 @@
                     className: x,
                     children: [2 === p.length ? p : "0" + p, ":", 2 === v.length ? v : "0" + v]
                 }), b || a === tt || 300 === a || 900 === a ? Object(i.jsx)(J, {
-                    text: b ? "Pause" : "Start",
+                    text: b ? "Tạm dừng" : "Bắt đầu",
                     onClick: g
                 }) : Object(i.jsxs)("div", {
                     style: {
                         display: "flex"
                     },
                     children: [Object(i.jsx)(J, {
-                        text: "Continue",
+                        text: "Tiếp tục",
                         onClick: g,
                         style: {
                             marginRight: "8px"
                         }
                     }), " ", Object(i.jsx)(J, {
-                        text: "Stop",
+                        text: "Dừng",
                         onClick: function() {
                             d(!1),
                             o(tt)

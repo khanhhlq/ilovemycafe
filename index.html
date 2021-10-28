@@ -131,7 +131,8 @@
                                 src="/static/media/beatsMute.70cdfd3c.svg" alt=""
                                 style="width: 20px; height: 20px; flex: 0 0 20px; margin-right: 8px;"> <span>Space Lofi
                                 Hip Hop Radio 24/7 🚀 Chill Lofi Beats To Study, Lofi Sleep Music 🚀 No Copyright
-                                Lofi</span></div>
+                                Lofi</span>
+                        </div>
                     </div>
                 </div>
                 <div class="yt-wrapper"
@@ -151,6 +152,25 @@
             </div>
         </div>
     </div>
+    
+    <!-- Live chat -->
+
+    <div class="live-chat">
+        <div class="box-chat widget chat-display-none">
+            <widgetbot server="903162874304823296" channel="903162874854252596" width="350" height="450"></widgetbot>
+        </div>
+        
+        <p class="clickhere" onclick="boxChat()">Tâm sự cùng nhau</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+    <script>
+        function boxChat(){
+            document.querySelector(".box-chat").classList.remove("chat-display-none");
+            document.querySelector(".clickhere").classList.add("chat-display-none");
+        }
+
+    </script>
+
     <script>
         ! function (e) {
             function r(r) {
@@ -267,49 +287,49 @@
         }([])
     </script>
     <script>
-        (function () {
-            window.onload = function () {
-                document.addEventListener("contextmenu", function (e) {
-                    e.preventDefault();
-                }, false);
-                document.addEventListener("keydown", function (e) {
-                    // "I" key
-                    if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
-                        disabledEvent(e);
-                    }
-                    // "J" key
-                    if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
-                        disabledEvent(e);
-                    }
-                    // "S" key + macOS
-                    if (e.keyCode === 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
-                        disabledEvent(e);
-                    }
-                    // "U" key
-                    if (e.ctrlKey && e.keyCode === 85) {
-                        disabledEvent(e);
-                    }
-                    // "C" key
-                    if (e.ctrlKey && e.keyCode === 67) {
-                        disabledEvent(e);
-                    }
-                    // "F12" key
-                    if (event.keyCode === 123) {
-                        disabledEvent(e);
-                    }
-                }, false);
+            (function () {
+                window.onload = function () {
+                    document.addEventListener("contextmenu", function (e) {
+                        e.preventDefault();
+                    }, false);
+                    document.addEventListener("keydown", function (e) {
+                        // "I" key
+                        if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+                            disabledEvent(e);
+                        }
+                        // "J" key
+                        if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
+                            disabledEvent(e);
+                        }
+                        // "S" key + macOS
+                        if (e.keyCode === 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                            disabledEvent(e);
+                        }
+                        // "U" key
+                        if (e.ctrlKey && e.keyCode === 85) {
+                            disabledEvent(e);
+                        }
+                        // "C" key
+                        if (e.ctrlKey && e.keyCode === 67) {
+                            disabledEvent(e);
+                        }
+                        // "F12" key
+                        if (event.keyCode === 123) {
+                            disabledEvent(e);
+                        }
+                    }, false);
 
-                function disabledEvent(e) {
-                    if (e.stopPropagation) {
-                        e.stopPropagation();
-                    } else if (window.event) {
-                        window.event.cancelBubble = true;
+                    function disabledEvent(e) {
+                        if (e.stopPropagation) {
+                            e.stopPropagation();
+                        } else if (window.event) {
+                            window.event.cancelBubble = true;
+                        }
+                        e.preventDefault();
+                        return false;
                     }
-                    e.preventDefault();
-                    return false;
-                }
-            };
-        })();
+                };
+            })();
     </script>
     <script src="/static/js/2.8ace6be4.chunk.js"></script>
     <script src="/static/js/main.4a5edcbf.chunk.js"></script>
