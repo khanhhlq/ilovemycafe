@@ -20,7 +20,7 @@ function iOS() {
       "iPhone",
       "iPod",
     ].includes(navigator.platform) ||
-    // iPad on iOS 13 detection
+    // iPad on iOS 15 and 14 detection
     (navigator.userAgent.includes("Mac") && "ontouchend" in document)
   );
 }
