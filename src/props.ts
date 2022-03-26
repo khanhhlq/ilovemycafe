@@ -68,7 +68,6 @@ export const defaultProps: DefaultProps = {
 const defaultKeys = Object.keys(defaultProps);
 
 export const setDefaultProps: Tippy['setDefaultProps'] = (partialProps) => {
-  /* istanbul ignore else */
   if (__DEV__) {
     validateProps(partialProps, []);
   }
